@@ -55,9 +55,9 @@ function sendenquiry()
     else{
         $("#sbutton").prop("disabled", true);
         $.ajax({
-        url: 'ajax-mail.php',
+        url: 'http://144.126.253.144/contact-us',
         type: 'POST',
-        data:{name:name, email:email, phone:phone, cmessage:cmessage, referer:"ezioaws", action:"add_enquiry"},
+        data:{name:name, email:email, phone:phone, message:cmessage,website:"P and K",to:"balajisivasakthi2020@gmail.com"},
         success: function(data)
         {
             
